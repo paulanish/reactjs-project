@@ -5,6 +5,7 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
+        "react-app", "prettier", "plugin:@typescript-eslint/recommended", "plugin:react/recommended", "plugin:jsx-a11y/recommended", "plugin:import/errors", "plugin:import/warnings",
         "plugin:react/recommended"
     ],
     "overrides": [
@@ -25,8 +26,12 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        
+        "react",
+        "prettier", "@typescript-eslint", "react", "jsx-a11y", "import"
     ],
     "rules": {
+        "prettier/prettier": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "off"
     }
 }
